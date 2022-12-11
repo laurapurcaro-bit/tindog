@@ -1,0 +1,223 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/******** NAV BAR ********/
+/* CLASS SELECTORS */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+/******** TITLE ********/
+/* TAG SELECTORS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* CLASS SELECTORS */
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  text-shadow: -2px -2px black;
+}
+
+.container-fluid {
+  /* top, left-right, bottom */
+  padding: 7% 15%;
+}
+
+/* sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* .col-iphone {
+  margin-left: 20px;
+} */
+
+.iphone6 {
+  margin-left: 50px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(20deg);
+  width: 25%;
+}
+
+.section-heading {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+/* buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* ID SELECTORS */
+
+/* } */
+
+/* OVERRIDE container-fluid padding */
+/* Order: PARENT child */
+/* Read FROM the right to the left */
+/* ONLY WORKS with parent-child situation */
+/* SPACE is important */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  position: relative;
+  text-align: left;
+}
+
+/* ex. COMBINED SELECTORS */
+/* read FROM left to right */
+/* h1#title {color: red;} */
+/* Only h1 that has an id of #title should have color red*/
+/* NO SPACE in between */
+/* NO parent-child situation */
+
+/* MEDIA QUERY */
+@media (max-width: 991px) {
+  /* CLASS SELECTORS */
+  .iphone6 {
+    margin: auto;
+    position: static;
+    transform: rotate(0deg);
+    width: 50%;
+  }
+  /* ID SELECTORS */
+  #title {
+    text-align: center;
+  }
+}
+
+/******** FEATURES ********/
+/* TAG SELECTORS */
+
+p {
+  color: #8f8f8f;
+}
+
+/* CLASS SELECTORS */
+
+.feature-title {
+  font-size: 1.5rem;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.testimonials-img {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.press-logo {
+  margin: 20px 20px 50px;
+  width: 15%;
+}
+
+/* ID SELECTORS */
+#features {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/******** TESTIMONIALS ********/
+/* ID SELECTORS */
+#testimonials {
+  /* background-color: #f2f2f2; */
+  background-color: #ef8172;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+/******** PRICING ********/
+/* CLASS SELECTORS */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* margin-bottom: 5%; */
+}
+
+.pricing-column {
+  /* top-bottom, left-right */
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+/* ID SELECTORS */
+#pricing {
+  padding: 100px;
+}
+
+/******** CALL TO ACTION and FOOTER ********/
+/* CLASS SELECTORS */
+.cta-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.icon-footer {
+  color: #514d4df6;
+  margin: auto 1%;
+}
+
+.p-footer {
+  color: #514d4df6;
+  font-size: 1rem;
+}
+
+/* ID SELECTORS */
+
+#footer {
+  background-color: #fff;
+  padding: 3% 15%;
+}
